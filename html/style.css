@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'font';
+    src: url('fonts/tyler-jamieson-moulton-elevator-100.otf');
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .1vw;
+    text-shadow: 0 0 .3vw black;
+
+    color: white;
+    user-select: none;
+}
+
+.container {
+    position: absolute;
+    text-align: center;
+    right: 1%;
+
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20vw;
+
+    height: auto;
+    border-radius: .7vw;
+    background: rgba(0, 0, 0, 0.70);
+
+    box-shadow: 0 0 .3vw black;
+}
+
+.botones {
+    display: grid;
+    margin-left: .1vw;
+    justify-content: center;
+
+    grid-template-columns: repeat(3, 4vw);
+    gap: 1vw;
+    right: 0%;
+    
+    width: 100%;
+    height: 50%;
+    margin-bottom: 4vw;
+}
+
+.botones > button {
+    font-family: 'font';
+    outline: none;
+    border: solid 2px gray;
+
+    background: rgba(0, 0, 0, 0.493);
+    box-shadow: 0 0 .3vw black;
+    font-size: 1vw;
+
+    color: white;
+    text-shadow: 0 0 .1vw white;
+    width: 4vw;
+    
+    height: 4vw;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.botones > button:hover {
+    cursor: pointer;
+    background: rgba(131, 131, 124, 0.233);
+}
+
+.botones > button:active {
+    transform: scale(1.05);
+}
